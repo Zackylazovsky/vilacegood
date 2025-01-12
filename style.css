@@ -1,0 +1,117 @@
+/* General Body Styling */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Title Styling */
+h1 {
+  font-size: 3rem;
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+/* Card General Styling */
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Image Styling */
+.card-img-top {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #0d6efd;
+  margin-top: -60px;
+  background-color: #fff;
+}
+
+/* Owner Card Styling */
+.owner-card {
+  background-color: #0d6efd;
+  color: #fff;
+  position: relative;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.owner-card .card-body {
+  padding-top: 2rem;
+}
+
+/* Admin Card Styling */
+.admin-card {
+  background-color: #fff;
+  color: #0d6efd;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.admin-card .card-body {
+  padding: 1.5rem;
+}
+
+/* Card Title Styling */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 10px;
+  color: inherit;
+}
+
+/* Card Text Styling */
+.card-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .card-img-top {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #0d6efd;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  /* Adjust card sizes for small screens */
+  .col-md-4 {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 480px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
